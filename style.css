@@ -1,0 +1,311 @@
+*{
+	box-sizing : border-box;
+}
+
+.container{
+	display : flex;
+	height: 100vh;
+	width : 100%;
+	flex-wrap: wrap;
+}
+
+.sidebar{
+	height : 100vh;
+	width : 17%;
+	background-color : black;
+	
+	padding: 0;
+	border:none;
+
+}
+
+.content{
+	width: 83%;
+	height : 100vh;
+	flex : 1 1 auto;
+	overflow : auto;
+	align-items: flex-start;
+}
+
+
+.logo{
+	background-image : url(img/Gushi.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center center;	
+	background-color:black;
+	background-origin: content-box;
+	padding :20px;
+	height : 48vh;
+
+
+
+}
+
+.logo_menu{
+	
+	background-color:black;
+	color: white;
+	text-align: center;
+	padding : 0;
+	margin : none;
+	height: 52vh;
+
+}
+
+
+.opening_hours{	
+	background-color: rgba(255, 48, 48, 0.6);	
+	font-size : 20px;
+}
+
+.hours {
+	background-color : rgba(56, 56, 56, 0.59);
+	padding-top : 35px;
+	padding-bottom: 20px;
+	font-size : 15px;
+}
+
+.catering { 
+	background-color: rgba(96, 124, 214, 0.42);
+	font-size:1rem;
+	padding-top: 10px;
+	padding-bottom:10px;
+}
+
+.address{
+	background-color:rgba(238, 166, 75, 0.43);
+	
+	font-size:1rem;
+	padding-top : 5px;
+	padding-bottom : 5px;
+}
+
+body{
+	margin : 0!important;
+	padding : 0!important;
+}
+
+.navbar{
+	background-color :rgba(255, 194, 103, 1);
+	padding-top:5vh;
+	width : 100%;
+	text-align : right;
+	clear: both;
+
+}
+
+.menubtn {
+	margin-left : 20px;
+	padding-left : 30px;
+	padding-right : 30px;
+	margin-right: 0;
+
+}
+
+.menufaq{
+	margin-left: 0;
+}
+
+button{
+	background-color:  white;
+	border:none;
+	font-weight :bold;
+	font-size : 1.5rem;
+	float : left;
+	padding-bottom:0;
+	margin-bottom: 0;
+
+	
+		
+	
+}	
+
+.menu{
+	display : flex;
+	align-items : center;
+	width : 100%;
+	padding: 2.5%;
+	flex-wrap : wrap;
+
+	 	
+}
+
+.menu_item{
+	background-color: grey;
+	border-radius : bottom 5px;
+	margin : 2.5%;	
+	min-width : 27%;
+
+}
+
+.item_head{
+	height : 7vh;
+	border-bottom : 4px solid #E7653C;
+}
+
+.head1{
+	color :white;
+	background-color: #3A3A3A;
+	width : 40%;
+	float : left;
+	text-align: left;
+	padding : 5px;
+	
+
+
+}
+
+.head2{
+	color :white;
+	background-color: #3A3A3A;
+	width : 60%;
+	float: left;
+	padding : 5px;
+	text-align: right;
+	
+}
+
+
+
+
+
+.item_pic{	
+	height: 280px;
+	width: 100%;
+}
+
+#kalbi{
+	object-fit: contain;
+	background-image : url(img/KalbiPlate.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center center;	
+}
+
+#gushibowl{
+	object-fit: contain;
+	background-image : url(img/GushiBowl.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center center;	
+}
+
+#kimchifriedrice{
+	object-fit: contain;
+	background-image : url(img/KimchiFriedRice.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center center;	
+}
+#beefyakiudon{
+	object-fit: contain;
+	background-image : url(img/BeefYakiUdon.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center center;	
+}
+#bibimbap{
+	object-fit: contain;
+	background-image : url(img/BiBimBap.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center center;	
+}
+#japchae{
+	object-fit: contain;
+	background-image : url(img/JapChae.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center center;	
+}
+.price{
+
+
+
+}
+table{
+	border-radius : 5px;
+}
+
+#up{
+	position : fixed;
+    right: 10px;
+    top: -100px;
+    width: 50px;
+    height: 50px;
+    background: grey;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 11.5px;
+    border-radius: 40px;
+    opacity: 0.7;
+    color: white;
+}
+/*
+
+.nav_bar{
+	background-color :rgba(255, 194, 103, 1);
+	padding-top:2vh;
+	margin-bottom : 20px;
+}
+
+.nomargin {
+	margin : 0!important;
+	padding : 0!important;
+}
+
+button{
+	background-color:  white;
+	border:none;
+	font-weight :bold;
+	font-size : 2rem;
+	padding-left:45px;
+	padding-right:45px;
+		
+	
+}	
+
+.faq{
+	margin-left:0;
+	margin-right :0;
+}
+
+.plates {
+	margin-top: 20px;
+}
+.platespic{
+	background-image: url("img/KalbiPlate.png");
+	background-size:contain;
+	background-repeat:no-repeat;
+	height : 280px;
+
+}
+
+.menuheader {
+	background-color: #3A3A3A;
+	color : white;
+	font-size : 2rem;
+	border-bottom : 3px solid;
+	border-color : #E7653C;
+	padding-top: 5px;
+	padding-bottom : 5px;
+	padding-left : 3px;
+	padding-right : 3px;
+	float :left;
+	text-align: left;
+
+}
+
+.menudescription {
+	background-color: #3A3A3A;
+	color : white;
+	border-bottom : 3px solid;
+	border-color : #E7653C;
+	float :left;
+	text-align: right;
+	padding-left : 40px;
+	
+
+}*/
