@@ -2,43 +2,36 @@
 	box-sizing : border-box;
 }
 
-.container{
-	display : flex;
-	height: 100vh;
-	width : 100%;
-	flex-wrap: wrap;
-}
-
 .sidebar{
 	height : 100vh;
-	width : 17%;
 	background-color : black;
-	
 	padding: 0;
 	border:none;
-
+	display : flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
-
 .content{
-	width: 83%;
-	height : 100vh;
-	flex : 1 1 auto;
-	overflow : auto;
-	align-items: flex-start;
+	height : 100vh;	
+	display : flex;
+	flex-direction : column;
+	float : right;
+	overflow-y:scroll;
+
+
+
 }
 
 
 .logo{
+	height : 50vh;
 	background-image : url(img/Gushi.png);
 	background-size:contain;
 	background-repeat:no-repeat;
 	background-position:center center;	
 	background-color:black;
 	background-origin: content-box;
-	padding :20px;
-	height : 48vh;
-
-
+	
 
 }
 
@@ -48,100 +41,90 @@
 	color: white;
 	text-align: center;
 	padding : 0;
-	margin : none;
-	height: 52vh;
-
+	margin : none; 	 	
+	height: 50%;
+	display : flex;
+	flex-direction: column;
+	justify-content: stretch;
 }
 
 
 .opening_hours{	
 	background-color: rgba(255, 48, 48, 0.6);	
-	font-size : 20px;
+	font-size:1.5vw;
+	height: 10%;
+	
 }
 
 .hours {
 	background-color : rgba(56, 56, 56, 0.59);
-	padding-top : 35px;
-	padding-bottom: 20px;
-	font-size : 15px;
+	height: 38%;
+	font-size:1.5vw;;
 }
 
 .catering { 
 	background-color: rgba(96, 124, 214, 0.42);
-	font-size:1rem;
-	padding-top: 10px;
-	padding-bottom:10px;
+	font-size:1.5vw;
+	height: 26%
 }
 
 .address{
 	background-color:rgba(238, 166, 75, 0.43);
-	
-	font-size:1rem;
-	padding-top : 5px;
-	padding-bottom : 5px;
+	height: 26%;
+	font-size:1.5vw;
 }
 
-body{
+.nav_bar{
+	background-color :rgba(255, 194, 103, 1);
+	padding-top:20px;
+	width : 100%;
+	
+
+}
+
+.nomargin{
 	margin : 0!important;
 	padding : 0!important;
-}
-
-.navbar{
-	background-color :rgba(255, 194, 103, 1);
-	padding-top:5vh;
-	width : 100%;
-	text-align : right;
-	clear: both;
-
-}
-
-.menubtn {
-	margin-left : 20px;
-	padding-left : 30px;
-	padding-right : 30px;
-	margin-right: 0;
-
-}
-
-.menufaq{
-	margin-left: 0;
 }
 
 button{
 	background-color:  white;
 	border:none;
 	font-weight :bold;
-	font-size : 1.5rem;
-	float : left;
-	padding-bottom:0;
-	margin-bottom: 0;
-
-	
+	font-size : 2rem;
+	padding-left:45px;
+	padding-right:45px;
 		
 	
 }	
 
+.faq{
+	margin-left:0;
+	margin-right :0;
+}
+
 .menu{
 	display : flex;
-	align-items : center;
 	width : 100%;
 	padding: 2.5%;
 	flex-wrap : wrap;
+	justify-content: space-evenly;
 
 	 	
 }
 
 .menu_item{
-	background-color: grey;
-	border-radius : bottom 5px;
+	background-color:rgb(244, 244, 244);
 	margin : 2.5%;	
 	min-width : 27%;
+	border-radius : 3%;
 
 }
 
 .item_head{
-	height : 7vh;
+	height : 50px;
 	border-bottom : 4px solid #E7653C;
+
 }
 
 .head1{
@@ -220,92 +203,65 @@ button{
 	background-position:center center;	
 }
 .price{
-
-
-
+	line-height: 2;
 }
 table{
-	border-radius : 5px;
-}
+	border-radius : 15px;
 
-#up{
-	position : fixed;
-    right: 10px;
-    top: -100px;
-    width: 50px;
-    height: 50px;
-    background: grey;
-    padding: 5px;
-    font-size: 12px;
-    text-align: center;
-    padding-top: 11.5px;
-    border-radius: 40px;
-    opacity: 0.7;
-    color: white;
-}
-/*
-
-.nav_bar{
-	background-color :rgba(255, 194, 103, 1);
-	padding-top:2vh;
-	margin-bottom : 20px;
-}
-
-.nomargin {
-	margin : 0!important;
-	padding : 0!important;
-}
-
-button{
-	background-color:  white;
-	border:none;
-	font-weight :bold;
-	font-size : 2rem;
-	padding-left:45px;
-	padding-right:45px;
-		
-	
 }	
 
-.faq{
-	margin-left:0;
-	margin-right :0;
-}
+@media(max-width :992px){
+	.sidebar{
+		height: 40vh;
+		flex-direction : row;
+		justify-content: flex-start;
+		flex-wrap : nowrap;
 
-.plates {
-	margin-top: 20px;
-}
-.platespic{
-	background-image: url("img/KalbiPlate.png");
-	background-size:contain;
-	background-repeat:no-repeat;
-	height : 280px;
+	}
 
-}
+	.logo {
+		height : 100%;
+		width : 50%;
+		padding : 20px;
+	}
 
-.menuheader {
-	background-color: #3A3A3A;
-	color : white;
-	font-size : 2rem;
-	border-bottom : 3px solid;
-	border-color : #E7653C;
-	padding-top: 5px;
-	padding-bottom : 5px;
-	padding-left : 3px;
-	padding-right : 3px;
-	float :left;
-	text-align: left;
+	.logo_menu{
+		height: 100%;
+		width : 50%;
+		padding : 10px;
 
-}
+	}
 
-.menudescription {
-	background-color: #3A3A3A;
-	color : white;
-	border-bottom : 3px solid;
-	border-color : #E7653C;
-	float :left;
-	text-align: right;
-	padding-left : 40px;
+	.content {
+		overflow-y: visible;
+	}
+
+@media(max-width :564px){
+	.sidebar{
+		height: 40vh;
+		flex-direction : column;
+		justify-content: flex-start;
+		flex-wrap : nowrap;
+
+	}
+
+	.logo {
+		height : 50%;
+		width : 100%;
+	}
+
+	.logo_menu{
+		height: 50%;
+		width : 100%;
+		
+
+	}
+
+	.content {
+		overflow-y: visible;
+	}
+
 	
 
-}*/
+
+}
